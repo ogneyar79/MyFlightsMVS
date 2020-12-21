@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 
 public class IncorrectSegment implements Predicate<Flight> {
 
-
     /**
      * This function look for flight with incorrect segments, if have this return false.
      */
@@ -28,6 +27,5 @@ public class IncorrectSegment implements Predicate<Flight> {
         }
         return flight.getSegments().stream().filter(el -> el.getDepartureDate().isAfter(el.getArrivalDate())).count() > 0 ? false : true;
     }
-
 
 }
