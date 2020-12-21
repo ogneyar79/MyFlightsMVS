@@ -1,8 +1,8 @@
 package com.gridnine.testing.checkingFlight;
 
-import com.gridnine.testing.FilterFlight;
-import com.gridnine.testing.Flight;
-import com.gridnine.testing.FlightBuilder;
+import com.gridnine.testing.model.FilterFlight;
+import com.gridnine.testing.model.Flight;
+import com.gridnine.testing.model.FlightBuilder;
 import com.gridnine.testing.predicate.FlightAfter;
 import com.gridnine.testing.predicate.IncorrectSegment;
 import com.gridnine.testing.predicate.WaitingTime;

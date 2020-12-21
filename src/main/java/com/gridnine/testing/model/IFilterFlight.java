@@ -1,4 +1,6 @@
-package com.gridnine.testing;
+package com.gridnine.testing.model;
+
+import com.gridnine.testing.model.Flight;
 
 import java.util.Collection;
 import java.util.List;

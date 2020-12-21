@@ -1,10 +1,9 @@
 package com.gridnine.testing.predicate;
 
-import com.gridnine.testing.Flight;
-import com.gridnine.testing.Segment;
+import com.gridnine.testing.model.Flight;
+import com.gridnine.testing.model.Segment;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;

@@ -1,7 +1,7 @@
 package com.gridnine.testing.predicate;
 
-import com.gridnine.testing.Flight;
-import com.gridnine.testing.Segment;
+import com.gridnine.testing.model.Flight;
+import com.gridnine.testing.model.Segment;
 
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;

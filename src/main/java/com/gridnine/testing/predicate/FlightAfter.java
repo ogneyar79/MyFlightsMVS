@@ -1,6 +1,6 @@
 package com.gridnine.testing.predicate;
 
-import com.gridnine.testing.Flight;
+import com.gridnine.testing.model.Flight;
 
 
 import java.time.LocalDateTime;
