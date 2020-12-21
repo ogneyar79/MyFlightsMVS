@@ -1,5 +1,9 @@
 package com.gridnine.testing;
 
+import com.gridnine.testing.model.FilterFlight;
+import com.gridnine.testing.model.Flight;
+import com.gridnine.testing.model.FlightBuilder;
+import com.gridnine.testing.model.Segment;
 import com.gridnine.testing.predicate.WaitingTime;
 import org.junit.Before;
 import org.junit.Test;

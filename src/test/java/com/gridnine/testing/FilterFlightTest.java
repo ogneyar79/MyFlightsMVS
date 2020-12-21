@@ -1,5 +1,9 @@
 package com.gridnine.testing;
 
+import com.gridnine.testing.model.FilterFlight;
+import com.gridnine.testing.model.Flight;
+import com.gridnine.testing.model.FlightBuilder;
+import com.gridnine.testing.model.Segment;
 import com.gridnine.testing.predicate.FlightAfter;
 import org.junit.Before;
 import org.junit.Test;
@@ -34,14 +38,11 @@ public class FilterFlightTest {
     @Test
     public void filter() {
         List coll = filter.filter(flightList, predicate);
-        System.out.println(coll.size() + " количиесво ранних рейсов");
         ArrayList list = new ArrayList();
-        System.out.println(coll.get(0) + " Отобранный ранний рейс");
         list.add(new Segment(LocalDateTime.now().plusDays(2), LocalDateTime.now().plusDays(2)));
         testFlight = (Flight) coll.stream().findAny().orElse(new Flight(list));
 
         boolean real = testFlight.getSegments().get(0).getDepartureDate().isAfter(timeNow);
-        System.out.println(real);
         assertThat(real, is(true));
     }
 }
