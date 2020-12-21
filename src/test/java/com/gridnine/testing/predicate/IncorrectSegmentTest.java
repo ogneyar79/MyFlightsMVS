@@ -48,6 +48,7 @@ public class IncorrectSegmentTest {
         boolean real = predicate.test(testFlight);
         assertThat(real, is(false));
     }
+
     @Test
     public void testFlightWithOneSegment() {
         segmentFirst = new Segment(LocalDateTime.now().plusHours(3), LocalDateTime.now().plusHours(9));

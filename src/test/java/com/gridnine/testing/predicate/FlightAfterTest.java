@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
@@ -27,6 +26,7 @@ public class FlightAfterTest {
         testFlight = new Flight(segments);
         predicate = new FlightAfter(testTime);
     }
+
     @Test
     public void testWhenFlightAfterNow() {
         segmentFirst = new Segment(LocalDateTime.now().minusDays(8),LocalDateTime.now().minusDays(7));
@@ -37,6 +37,7 @@ public class FlightAfterTest {
         boolean real =  predicate.test(testFlight);
         assertThat(real, is(false));
     }
+
     @Test
     public void testWhenFlightBeforeNow() {
         segmentFirst = new Segment(LocalDateTime.now().plusHours(3),LocalDateTime.now().plusHours(9));

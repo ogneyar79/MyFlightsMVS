@@ -11,6 +11,9 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
+/**
+ * We test here class that cut all flights before point, hire time now..
+ */
 public class FilterFlightTest {
 
     FlightAfter predicate;

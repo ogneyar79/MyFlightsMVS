@@ -1,24 +1,21 @@
 package com.gridnine.testing;
 
-import com.gridnine.testing.predicate.FlightAfter;
 import com.gridnine.testing.predicate.IncorrectSegment;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * We test here method of class that cut flights where as example departs before it arrives.
+ */
 public class FilterTestIncorrectSegment {
 
     IncorrectSegment predicate;
-
     List<Flight> flightList;
     FilterFlight filter;
-
 
     @Before
     public void install() {
@@ -37,5 +34,4 @@ public class FilterTestIncorrectSegment {
 
         assertThat(quantityFlightAfterFilter, is(expected));
     }
-
 }
